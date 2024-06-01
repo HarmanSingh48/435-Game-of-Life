@@ -1,0 +1,42 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>TCSS 435: "Game of Life"</title>
+  
+    <script type="text/javascript" src="./assetmanager.js"></script>
+    <script type="text/javascript" src="./timer.js"></script>
+    <script type="text/javascript" src="./gameengine.js"></script>
+    <script type="text/javascript" src="./automata.js"></script>
+    <script type="text/javascript" src="./util.js"></script>
+    <script type="text/javascript" src="./main.js"></script>
+</head>
+<body>
+    <h1>An implementation of John Conway's "Game of Life" for TCSS 435: Unit 1</h1>
+    <h2>by Harman Singh<br></h2>
+    <canvas id="gameWorld" width="1024" height="768" style="background: white; border: 1px solid black" tabindex="0" autofocus></canvas>
+    <div>
+        <div id="ticks">Ticks: 0</div>
+        <div>
+            <input type="checkbox" id="pause">
+            <label for="pause">Pause/Unpause</label><br>
+        </div>
+
+        <input type="button" id="clear" value="Clear All">
+
+        <div>        
+            <label for="speed">Fast</label>        
+            <input type="range" id="speed" min="1" max="120" value="30" step="1">
+            <label for="speed">Slow</label>
+        </div>
+
+        <div>
+            <p>Create Patterns:</p>
+            <input type="button" id="stripe" value="Striped">
+            <input type="button" id="checker" value="Grid-Like">
+            <input type="button" id="random" value="Random">
+        </div>
+    </div>
+</body>
+</html>
